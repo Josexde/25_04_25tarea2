@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+    
+    <script>
+       
+        var nombre = prompt("¿Cuál es tu nombre?");
+    
+      
+        var x = prompt("Escribe un número para x:");
+        var y = prompt("Escribe un número para y:");
+        var z = prompt("Escribe un número para z:");
+    
+        x = parseFloat(x);
+        y = parseFloat(y);
+        z = parseFloat(z);
+    
+        var suma = x + y + z;
+        var multiplicacion = x * y * z;
+        var resta = x - y - z;
+        var division = x / y / z;
+    
+    
+        var resultado = "Nombre: " + nombre + "<br>" +
+                        "Suma: " + suma + "<br>" +
+                        "Multiplicación: " + multiplicacion + "<br>" +
+                        "Resta: " + resta + "<br>" +
+                        "División: " + division.toFixed(2); 
+                        
+        document.getElementById("resultado").innerHTML = resultado;
+    </script>
+</body>
+</html>
